@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button Content="Home" x:Name="btnHome" FontSize="24" Margin="15, 10" Click="btnHome_Click"/>
+            <Button Content="Manage Projects" Name="btnManage" FontSize="24" Margin="15, 10" Click="btnManage_Click"/>
+        </StackPanel>
+
+
+        <Frame Grid.Column="1" x:Name="frmNav"/>
+
     </Grid>
 </Window>

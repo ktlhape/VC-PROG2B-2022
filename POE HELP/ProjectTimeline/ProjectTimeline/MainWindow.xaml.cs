@@ -24,5 +24,15 @@ namespace ProjectTimeline
         {
             InitializeComponent();
         }
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            frmNav.Content = new pages.Home();
+        }
+
+        private void btnManage_Click(object sender, RoutedEventArgs e)
+        {
+            frmNav.Content = new pages.ManageProject();
+        }
     }
 }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\VC\PROG 2B\GR1\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\
+D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\
 ProjectTimeline
 none
 false
 DEBUG;TRACE
-D:\VC\PROG 2B\GR1\POE HELP\ProjectTimeline\ProjectTimeline\App.xaml
-1219584333
+D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\App.xaml
+316910908
 
-71890035342
+91293028511
 13-1310406943
-MainWindow.xaml;
+MainWindow.xaml;pages\Home.xaml;pages\ManageProject.xaml;
 
-False
+True
 

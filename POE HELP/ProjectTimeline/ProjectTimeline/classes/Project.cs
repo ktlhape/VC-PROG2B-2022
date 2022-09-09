@@ -25,7 +25,7 @@ namespace ProjectTimeline.classes
 		}
 		public DateTime StartDate { get; set; }
 		public DateTime EndDate { get; set; }
-		private readonly double _duration;
+		private double _duration;
 
 		public double Duration
 		{
@@ -35,7 +35,7 @@ namespace ProjectTimeline.classes
 				{
 					throw new Exception($"Start date ({StartDate}) cannot be after the end date ({EndDate})");
 				}
-				//_duration = value; 
+				_duration = value;
 			}
 		}
 		public double EstimatedCost { get; set; }

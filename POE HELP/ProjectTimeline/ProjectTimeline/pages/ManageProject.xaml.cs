@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectTimeline.classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ProjectTimeline.pages;
 
 namespace ProjectTimeline.pages
 {
@@ -23,6 +25,14 @@ namespace ProjectTimeline.pages
         public ManageProject()
         {
             InitializeComponent();
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (Project x in Project.prList)
+            {
+                lstDisplay.Items.Add(x.ToString());
+            }
         }
     }
 }

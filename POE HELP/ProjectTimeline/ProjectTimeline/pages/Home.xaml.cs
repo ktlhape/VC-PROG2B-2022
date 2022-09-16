@@ -25,12 +25,12 @@ namespace ProjectTimeline.pages
         {
             InitializeComponent();
         }
-
+        //public static Project pr = new Project();
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             string prCode, prName;
             DateTime sDate, eDate;
-
+        
 
             try
             {
@@ -42,22 +42,31 @@ namespace ProjectTimeline.pages
 
                 Project objPr = new Project(prCode, prName, sDate, eDate);
 
-                txtDuration.Text = objPr.Duration.ToString();
+                Project.prList.Add(objPr);
+
+                txtDuration.Text = $"{objPr.Duration} days";
                 objPr.calcEstimatedCost(150);
 
-                txtEstCost.Text = objPr.EstimatedCost.ToString();
-
-                MessageBox.Show(objPr.ToString());
+                txtEstCost.Text = objPr.EstimatedCost.ToString("c2");
+                MessageBox.Show($"Project {objPr.ProjectName} has been added");
+                clearScreen();
             }
             catch (Exception x)
             {
 
                 MessageBox.Show(x.Message);
             }
+        }
 
-          
-
-
+        private void clearScreen()
+        {
+            txtDuration.Clear();
+            txtEstCost.Clear();
+            txtPrCode.Clear();
+            txtPrName.Clear();
+            dpEndDate.SelectedDate = DateTime.Today;
+            dpStartDate.SelectedDate = DateTime.Today;
+            txtPrCode.Focus();
         }
     }
 }

@@ -8,7 +8,7 @@ namespace ProjectTimeline.classes
 {
     public class Project
     {
-		List<Project> prList = new List<Project>();
+		public static List<Project> prList = new List<Project>();
         public string ProjectCode { get; set; }
 		private string _projectName;
 
@@ -25,34 +25,25 @@ namespace ProjectTimeline.classes
 		}
 		public DateTime StartDate { get; set; }
 		public DateTime EndDate { get; set; }
-		private double _duration;
 
-		public double Duration
-		{
-			get { return _duration; }
-			set {
-				if (StartDate > EndDate)
-				{
-					throw new Exception($"Start date ({StartDate}) cannot be after the end date ({EndDate})");
-				}
-				_duration = value;
-			}
-		}
+		public double Duration {get;}
 		public double EstimatedCost { get; set; }
+		public Project()
+		{
 
+		}
 		public Project(string theCode, string theName, DateTime sDate, DateTime eDate)
 		{
 			ProjectCode = theCode;
 			ProjectName = theName;
 			StartDate = sDate;
 			EndDate = eDate;
-			Duration = (EndDate - StartDate).TotalDays;
+            if (StartDate > EndDate)
+            {
+                throw new Exception($"Start date ({StartDate}) cannot be after the end date ({EndDate})");
+            }
+            Duration = (EndDate - StartDate).TotalDays;
 		}
-
-		//public double calcEstimatedCost(double rate)
-		//{
-		//	return (rate * Duration) * 8;
-		//}
 		public void calcEstimatedCost(double rate)
 		{
 			EstimatedCost = (rate * Duration) * 8;
@@ -64,19 +55,16 @@ namespace ProjectTimeline.classes
             //Code: PR123  Name: SISONKE 14 days, EC: R22 400.00
             return $"Code: {ProjectCode} Name: {ProjectName} {Duration} days, EC: {EstimatedCost:c}";
 		}
-
+		/*implement an indexer that will return a project 
+		 * with a specific code*/
 		public Project this[string code]
 		{
 			get {
-				foreach (Project p in prList)
-				{
-					if (p.ProjectCode.Equals(code))
-					{
-						return p;
-					}
-				}
-				return null;
+				return prList.Find(x => x.ProjectCode.Equals(code));
 			}
 		}
+		//return a list of all projects
+
+
 	}
 }

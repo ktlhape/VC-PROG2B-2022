@@ -9,22 +9,22 @@
       Title="Home">
 
     <Grid Background="White" >
-        <Label Content="Project Code" HorizontalAlignment="Left" Margin="213,68,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPrCode" HorizontalAlignment="Left" Margin="211,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <Label Content="Project Code" HorizontalAlignment="Left" Margin="86,56,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPrCode" HorizontalAlignment="Left" Margin="84,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
 
-        <Label Content="Project Name" HorizontalAlignment="Left" Margin="211,128,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPrName" HorizontalAlignment="Left" Margin="211,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <Label Content="Project Name" HorizontalAlignment="Left" Margin="84,116,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPrName" HorizontalAlignment="Left" Margin="84,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
 
-        <Label Content="Duration" HorizontalAlignment="Left" Margin="400,123,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtDuration" IsEnabled="False" HorizontalAlignment="Left" Margin="400,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <Label Content="Duration" HorizontalAlignment="Left" Margin="273,111,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDuration" IsEnabled="False" HorizontalAlignment="Left" Margin="273,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
 
-        <Label Content="Estimated Cost" HorizontalAlignment="Left" Margin="400,68,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtEstCost" IsEnabled="False" HorizontalAlignment="Left" Margin="400,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
-        <DatePicker x:Name="dpStartDate" HorizontalAlignment="Left" Margin="224,273,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="dpEndDate" HorizontalAlignment="Left" Margin="387,273,0,0" VerticalAlignment="Top"/>
-        <Label Content="Start Date" HorizontalAlignment="Left" Margin="224,242,0,0" VerticalAlignment="Top"/>
-        <Label Content="End Date" HorizontalAlignment="Left" Margin="387,242,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnSave" Content="SAVE" HorizontalAlignment="Left" Margin="224,338,0,0" VerticalAlignment="Top" FontSize="18" Height="39" Width="123" Click="btnSave_Click"/>
+        <Label Content="Estimated Cost" HorizontalAlignment="Left" Margin="273,56,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEstCost" IsEnabled="False" HorizontalAlignment="Left" Margin="273,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <DatePicker x:Name="dpStartDate" HorizontalAlignment="Left" Margin="97,261,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpEndDate" HorizontalAlignment="Left" Margin="260,261,0,0" VerticalAlignment="Top"/>
+        <Label Content="Start Date" HorizontalAlignment="Left" Margin="97,230,0,0" VerticalAlignment="Top"/>
+        <Label Content="End Date" HorizontalAlignment="Left" Margin="260,230,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSave" Content="SAVE" HorizontalAlignment="Left" Margin="97,326,0,0" VerticalAlignment="Top" FontSize="18" Height="39" Width="123" Click="btnSave_Click"/>
 
 
     </Grid>

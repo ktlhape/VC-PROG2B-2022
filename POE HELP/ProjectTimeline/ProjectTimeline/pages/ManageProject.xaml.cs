@@ -29,10 +29,18 @@ namespace ProjectTimeline.pages
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            foreach (Project x in Project.prList)
-            {
-                lstDisplay.Items.Add(x.ToString());
-            }
+            string code = txtSearch.Text;
+            Project p = new Project();
+
+            lstDisplay.Items.Add(p[code].ToString());
+       
+        }
+
+        private void btnHighestCost_Click(object sender, RoutedEventArgs e)
+        {
+            Project p = new Project();
+
+            lstDisplay.Items.Add(p.HighestEstCost().ToString());
         }
     }
 }

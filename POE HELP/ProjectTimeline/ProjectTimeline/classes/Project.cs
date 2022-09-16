@@ -63,7 +63,24 @@ namespace ProjectTimeline.classes
 				return prList.Find(x => x.ProjectCode.Equals(code));
 			}
 		}
-		//return a list of all projects
+		//return a prject with the highest estimated cost
+
+		public Project HighestEstCost()
+		{
+			//Project hp = prList[0]; //assume this has the highest est cost
+
+			//foreach (Project p in prList)
+			//{
+			//	if (p.EstimatedCost > hp.EstimatedCost)
+			//	{
+			//		hp = p;
+			//	}
+			//}
+
+			return prList.Aggregate((p1, p2) => 
+			p1.EstimatedCost > p2.EstimatedCost ? p1 : p2);
+
+		}
 
 
 	}

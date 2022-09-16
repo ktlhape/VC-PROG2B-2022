@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ProjectTimeline.pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="500" d:DesignWidth="800"
       Title="ManageProject">
 
     <Grid Background="White">
@@ -13,10 +13,11 @@
             <ColumnDefinition Width="7*"/>
             <ColumnDefinition Width="13*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="23,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18" Height="26"/>
-        <Label Content="Enter Project code" HorizontalAlignment="Left" Margin="23,107,0,0" VerticalAlignment="Top" FontSize="18" Height="34" Width="155"/>
-        <Button x:Name="btnSearch" Content="SEARCH" HorizontalAlignment="Left" Margin="23,197,0,0" VerticalAlignment="Top" FontSize="18" Height="42" Width="120" Click="btnSearch_Click"/>
-        <ListBox x:Name="lstDisplay" Grid.Column="1" Margin="35,35,35,35" BorderBrush="Black" BorderThickness="2"/>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="31,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18" Height="26"/>
+        <Label Content="Enter Project code" HorizontalAlignment="Left" Margin="31,20,0,0" VerticalAlignment="Top" FontSize="18" Height="34" Width="155"/>
+        <Button x:Name="btnSearch" Content="SEARCH" HorizontalAlignment="Left" Margin="31,99,0,0" VerticalAlignment="Top" FontSize="18" Height="39" Width="155" Click="btnSearch_Click"/>
+        <ListBox x:Name="lstDisplay" Grid.Column="1" FontSize="18" Margin="35,35,35,35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="2"/>
+        <Button x:Name="btnHighestCost" Content="DISPLAY HIGHEST COST" HorizontalAlignment="Center" Margin="0,178,0,0" VerticalAlignment="Top" FontSize="18" Height="47" Width="218" Click="btnHighestCost_Click"/>
 
     </Grid>
 </Page>

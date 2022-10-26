@@ -33,14 +33,14 @@ namespace ProjectTimeline.pages
             Project p = new Project();
 
             lstDisplay.Items.Add(p[code].ToString());
-       
+
         }
 
         private void btnHighestCost_Click(object sender, RoutedEventArgs e)
         {
             Project p = new Project();
-
-            lstDisplay.Items.Add(p.HighestEstCost().ToString());
+            p = p.HighestEstCost();
+            lstDisplay.Items.Add(p.ToString());
         }
     }
 }

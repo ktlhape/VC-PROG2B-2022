@@ -42,11 +42,11 @@ namespace ProjectTimeline.pages
 
                 Project objPr = new Project(prCode, prName, sDate, eDate);
 
-                Project.prList.Add(objPr);
-
+                //Project.prList.Add(objPr);              
                 txtDuration.Text = $"{objPr.Duration} days";
                 objPr.calcEstimatedCost(150);
 
+                objPr.AddProject();
                 txtEstCost.Text = objPr.EstimatedCost.ToString("c2");
                 MessageBox.Show($"Project {objPr.ProjectName} has been added");
                 clearScreen();

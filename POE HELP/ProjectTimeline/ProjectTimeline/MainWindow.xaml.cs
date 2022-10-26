@@ -20,19 +20,23 @@ namespace ProjectTimeline
     /// </summary>
     public partial class MainWindow : Window
     {
+        pages.Home pgHome = new pages.Home();
+        pages.ManageProject pgManage = new pages.ManageProject();
+
         public MainWindow()
         {
             InitializeComponent();
+            frmNav.Content = pgHome;
         }
 
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
-            frmNav.Content = new pages.Home();
+            frmNav.Content = pgHome;
         }
 
         private void btnManage_Click(object sender, RoutedEventArgs e)
         {
-            frmNav.Content = new pages.ManageProject();
+            frmNav.Content = pgManage;
         }
     }
 }

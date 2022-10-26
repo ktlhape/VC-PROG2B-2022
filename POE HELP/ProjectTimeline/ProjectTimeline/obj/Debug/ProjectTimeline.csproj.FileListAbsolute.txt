@@ -2,7 +2,6 @@ D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\bin\Debug\Proje
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\bin\Debug\ProjectTimeline.exe
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\bin\Debug\ProjectTimeline.pdb
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\ProjectTimeline.csproj.AssemblyReference.cache
-D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\ProjectTimeline.csproj.SuggestedBindingRedirects.cache
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\MainWindow.g.cs
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\pages\Home.g.cs
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\pages\ManageProject.g.cs
@@ -18,3 +17,6 @@ D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\Proje
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\ProjectTimeline.csproj.CoreCompileInputs.cache
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\ProjectTimeline.exe
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\ProjectTimeline.pdb
+D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\bin\Debug\Data\ProjectDB.mdf
+D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\bin\Debug\Data\ProjectDB_log.ldf
+D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\ProjectTimeline_Content.g.cs

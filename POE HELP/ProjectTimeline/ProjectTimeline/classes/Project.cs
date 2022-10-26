@@ -32,6 +32,7 @@ namespace ProjectTimeline.classes
 
         public double Duration { get; }
         public double EstimatedCost { get; set; }
+        public Employee Emp { get; set; }
         public Project()
         {
 
@@ -101,7 +102,7 @@ namespace ProjectTimeline.classes
 
         public void AddProject()
         {
-            string strInsert = $"INSERT INTO tblProject VALUES('{ProjectCode}','{ProjectName}','{StartDate}','{EndDate}',{Duration},{EstimatedCost})";
+            string strInsert = $"INSERT INTO tblProject VALUES('{ProjectCode}','{ProjectName}','{StartDate}','{EndDate}',{Duration},{EstimatedCost}, {Emp.EmployeeNum})";
             SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
 
             conn.Open();

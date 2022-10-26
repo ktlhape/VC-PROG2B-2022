@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ProjectTimeline"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-       
+     
         Title="Project Timeline" Height="550" Width="1000">
     <Grid>
         <Grid.ColumnDefinitions>

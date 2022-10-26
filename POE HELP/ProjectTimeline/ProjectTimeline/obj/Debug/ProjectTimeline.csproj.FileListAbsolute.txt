@@ -20,3 +20,5 @@ D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\Proje
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\bin\Debug\Data\ProjectDB.mdf
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\bin\Debug\Data\ProjectDB_log.ldf
 D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\ProjectTimeline_Content.g.cs
+D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\Login.g.cs
+D:\repos\VC-PROG2B-2022\POE HELP\ProjectTimeline\ProjectTimeline\obj\Debug\Login.baml

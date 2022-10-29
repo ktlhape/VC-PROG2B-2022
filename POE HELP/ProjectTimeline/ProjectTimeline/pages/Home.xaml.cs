@@ -30,8 +30,7 @@ namespace ProjectTimeline.pages
         {
             string prCode, prName;
             DateTime sDate, eDate;
-        
-
+            
             try
             {
                 prCode = txtPrCode.Text;

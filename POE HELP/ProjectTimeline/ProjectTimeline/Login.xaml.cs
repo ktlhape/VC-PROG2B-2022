@@ -24,19 +24,19 @@ namespace ProjectTimeline
         {
             InitializeComponent();
         }
-
+        MainWindow main = new MainWindow();
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             int empNum = Convert.ToInt32(txtEmpNum.Text);
+
             string pass = txtPassword.Password.ToString();
             Employee em = new Employee();
             em.getEmployee(empNum);
+            
 
-            MainWindow main = new MainWindow();
-           
             if (empNum == em.EmployeeNum && pass.Equals(em.Password))
             {
-          
+                main.Tag = em;
                 main.ShowDialog();
                 this.Close();
             }

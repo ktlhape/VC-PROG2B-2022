@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ProjectTimeline.classes;
+using System.Configuration;
 
 namespace ProjectTimeline
 {
@@ -23,7 +24,7 @@ namespace ProjectTimeline
     {
         pages.Home pgHome = new pages.Home();
         pages.ManageProject pgManage = new pages.ManageProject();
-
+        public Employee myEmployee = new Employee();
         public MainWindow()
         {
             InitializeComponent();        
@@ -41,6 +42,10 @@ namespace ProjectTimeline
             frmNav.Content = pgManage;
         }
 
-     
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Employee em = (Employee)this.Tag;
+            this.Title = $"Welcome {em.Name}: ({em.EmployeeNum})";  
+        }
     }
 }

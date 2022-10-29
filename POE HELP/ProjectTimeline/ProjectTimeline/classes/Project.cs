@@ -49,6 +49,10 @@ namespace ProjectTimeline.classes
             }
             Duration = (EndDate - StartDate).TotalDays;
         }
+       /// <summary>
+       /// 
+       /// </summary>
+       /// <param name="rate"></param>
         public void calcEstimatedCost(double rate)
         {
             EstimatedCost = (rate * Duration) * 8;

@@ -16,10 +16,8 @@ namespace ProjectTimeline.classes
         public string Name { get; set; }
         public string Password { get; set; }
 
-        public Employee()
-        {
-
-        }
+        public Employee() { }
+        
         public Employee(int employeeNum, string name, string password)
         {
             EmployeeNum = employeeNum;
